@@ -39,3 +39,20 @@ if( nume1 > 0){
     console.log("Es igual a cero");
 }
 
+//! 4) Bucle While
+let numero1 = Number(prompt("Ingrese un número: "));
+let cont = 1;
+
+while(cont <= numero1){
+    console.log(cont);
+    cont++;
+}
+ 
+let contra = prompt("Ingrese contraseña: ");
+let clave = "1234";
+ 
+while(contra != clave){
+    contra = prompt("Contraseña incorrecta, ingresela nuevamente: ");        
+}
+
+console.log("Contraseña correcta!");  
