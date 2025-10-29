@@ -20,3 +20,22 @@ let num2 = Number(prompt("Ingrese otro número: "));
 let suma = num1+num2;
 console.log("La suma es "+ suma);
 
+//! 3) Condicional if
+let edadUsu = Number(prompt("Ingrese un edad: "));
+
+if(edadUsu >= 18){
+    console.log("Eres mayor, puedes entrar")
+}else {
+    console.log("Eres menor, no puedes entrar")
+}
+
+let nume1 = Number(prompt("Ingrese un número: "));
+
+if( nume1 > 0){
+    console.log("El numero es positivo");
+}else if( nume1 < 0){
+    console.log("El numero es negativo");
+}else{
+    console.log("Es igual a cero");
+}
+
