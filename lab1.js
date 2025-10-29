@@ -56,3 +56,16 @@ while(contra != clave){
 }
 
 console.log("Contraseña correcta!");  
+
+//! 5) Ciclo for
+
+for (let i = 1; i < 11; i++){
+    console.log(i);    
+}
+
+let n1 = Number(prompt("Ingrese un número: "));
+console.log("Tabla de multiplicar de "+n1); 
+for(let i=1; i < 11; i++){
+    let multi = n1*i;       
+    console.log(n1 +" * "+i+" = "+ multi);    
+}
