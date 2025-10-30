@@ -50,5 +50,17 @@ function calcularPromedio(notas){
 }
 let notasIngre = prompt("Ingrese sus notas separadas por comas(32,25,50): ");
 let notas = notasIngre.split(",").map(Number);// convierte el string en array
-console.log(calcularPromedio(notas));
+console.log(calcularPromedio(notas).toFixed(2));
 
+//! Ejercicio 5: Filtrar usuarios por edad 
+function filtrarUsuarios(usuarios, edadMinima){
+    for(let i=0; i<usuarios.length; i++){
+        if(usuarios[i].edad >= edadMinima){
+            console.log("Edad > a ",edadMinima," : ",usuarios[i].edad);
+        }
+    }
+} 
+const usu=[{ nombre: "Ana", edad: 25 },{ nombre: "Sofi", edad: 32 },
+    { nombre: "carlos", edad: 60 }, { nombre: "David", edad: 12 }];
+let edmin = prompt("Ingrese la edad minima: ");
+console.log(filtrarUsuarios(usu, edmin));
