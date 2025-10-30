@@ -38,3 +38,17 @@ const inventario = [{ nombre: "Camisa", precio: 20 },
 ]
 let produ = prompt("Ingrese producto a buscar: ");
 console.log(buscarProducto(produ, inventario));
+
+//! Ejercicio 4: Calcular promedio notas
+console.log("Ejercicio 4: Calcular promedio notas");
+function calcularPromedio(notas){
+    let sum=0;
+    for (let i=0; i<notas.length;i++){
+        sum += notas[i];
+    }
+    return sum/(notas.length);
+}
+let notasIngre = prompt("Ingrese sus notas separadas por comas(32,25,50): ");
+let notas = notasIngre.split(",").map(Number);// convierte el string en array
+console.log(calcularPromedio(notas));
+
