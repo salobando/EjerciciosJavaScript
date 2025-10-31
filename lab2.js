@@ -53,6 +53,7 @@ let notas = notasIngre.split(",").map(Number);// convierte el string en array
 console.log(calcularPromedio(notas).toFixed(2));
 
 //! Ejercicio 5: Filtrar usuarios por edad 
+console.log("Ejercicio 5: Filtrar usuarios por edad ");
 function filtrarUsuarios(usuarios, edadMinima){
     for(let i=0; i<usuarios.length; i++){
         if(usuarios[i].edad >= edadMinima){
@@ -67,6 +68,7 @@ console.log(filtrarUsuarios(usu,edmin));
 
 
 //! Ejercicio 6. Contador de palabras
+console.log("Ejercicio 6. Contador de palabras");
 function contarPalabras(texto){
     return texto.length;
 }
@@ -74,6 +76,7 @@ let cadena = prompt("Ingrese una frase: ").split(" ");
 console.log(contarPalabras(cadena));
 
 //! Ejercicio 7: Simulador cajero automatico
+console.log("Ejercicio 7: Simulador cajero automatico");
 function retirarDinero(saldo, monto){
     if(saldo>monto){
         console.log("Saldo nuevo: ", saldo-monto);        
@@ -84,3 +87,18 @@ function retirarDinero(saldo, monto){
 let saldo = prompt("Ingrese saldo actual: ");
 let monto = prompt("Monto a retirar: ");
 console.log(retirarDinero(saldo,monto));
+
+//! Ejercicio 8: Cambio de Moneda
+console.log("Ejercicio 8: Cambio de Moneda");
+function convertirMoneda(moneda, monedaDestino){
+    let final = 0;
+    if(monedaDestino === "USD"){
+       final = moneda/3881.61;
+    }else if(monedaDestino === "EUR"){
+        final = moneda/4492.80;
+    }
+    return final.toFixed(2);
+}
+let moneda = prompt("Ingrese un monto en COP: ");
+let conver = prompt("Conversion en: USD o EUR: ");
+console.log(convertirMoneda(moneda,conver));
