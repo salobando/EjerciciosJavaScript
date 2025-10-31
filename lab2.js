@@ -63,4 +63,24 @@ function filtrarUsuarios(usuarios, edadMinima){
 const usu=[{ nombre: "Ana", edad: 25 },{ nombre: "Sofi", edad: 32 },
     { nombre: "carlos", edad: 60 }, { nombre: "David", edad: 12 }];
 let edmin = prompt("Ingrese la edad minima: ");
-console.log(filtrarUsuarios(usu, edmin));
+console.log(filtrarUsuarios(usu,edmin));
+
+
+//! Ejercicio 6. Contador de palabras
+function contarPalabras(texto){
+    return texto.length;
+}
+let cadena = prompt("Ingrese una frase: ").split(" ");
+console.log(contarPalabras(cadena));
+
+//! Ejercicio 7: Simulador cajero automatico
+function retirarDinero(saldo, monto){
+    if(saldo>monto){
+        console.log("Saldo nuevo: ", saldo-monto);        
+    }else{
+        console.log("Fondos Insuficientes");        
+    }
+}
+let saldo = prompt("Ingrese saldo actual: ");
+let monto = prompt("Monto a retirar: ");
+console.log(retirarDinero(saldo,monto));
