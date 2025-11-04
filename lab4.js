@@ -145,3 +145,31 @@ const rect = new Rectangulo("Rojo",5,8);
 const circ = new Circulo("Azul",5);
 console.log("Area del Rectangulo: "+rect.area());
 console.log("Area del Circulo: "+circ.area());
+
+//! 5.Sistema de Animales
+class Animal{
+    constructor(nombre,edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+    emitirSonido(){
+        return "Emite un sonido";        
+    }
+}
+
+class Perro extends Animal{
+    emitirSonido(){
+        return "El perro hace woof woof";        
+    }
+}
+
+class Gato extends Animal{
+    emitirSonido(){
+        return "El gato hace miau miau";        
+    }
+}
+
+const perro1 = new Perro("Goofy", 3);
+const gato1 = new Gato("Barry", 2);
+console.log(perro1.emitirSonido());
+console.log(gato1.emitirSonido());
